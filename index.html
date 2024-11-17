@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paolo Gómez Manrique</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0b3d0b;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+        }
+
+        header {
+            padding: 50px 0;
+            background-image: url('https://images.vexels.com/media/users/3/72715/raw/6861cb7cbbc828925cb5f2b15e6ec06d-copos-de-nieve-de-navidad-sobre-fondo-gris.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            color: #0b3d0b;
+            border-bottom: 5px solid #e94560;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+            color: #e94560;
+            text-shadow: 2px 2px #145214;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #d62121;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 80%;
+            max-width: 1200px;
+            margin: 30px 0;
+            gap: 20px;
+        }
+
+        .about-me {
+            background-color: #145214;
+            padding: 30px;
+            width: 45%;
+            border-radius: 10px;
+            border: 2px solid #e94560;
+            position: relative;
+            text-align: left;
+        }
+
+        .about-me:before {
+            content: "🎄";
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            font-size: 2em;
+        }
+
+        .about-me:after {
+            content: "🎄";
+            position: absolute;
+            top: -20px;
+            right: 10px;
+            font-size: 2em;
+        }
+
+        .about-me h2 {
+            font-size: 2.5em;
+            color: #e94560;
+            margin-bottom: 20px;
+        }
+
+        .about-me p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .info {
+            font-size: 1em;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #0f3d0f;
+            border-radius: 10px;
+        }
+
+        .info div {
+            margin-bottom: 10px;
+        }
+
+        .courses {
+            width: 45%;
+            background-color: #145214;
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid #e94560;
+            text-align: left;
+        }
+
+        .courses h2 {
+            font-size: 2.5em;
+            color: #e94560;
+            margin-bottom: 20px;
+        }
+
+        .course-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #0f3d0f;
+            border-radius: 10px;
+            border: 1px solid #e94560;
+            position: relative;
+        }
+
+        .course-item:before {
+            content: "❄️";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            font-size: 1.5em;
+        }
+
+        .course-item:after {
+            content: "❄️";
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            font-size: 1.5em;
+        }
+
+        .course-item h3 {
+            color: #e94560;
+            margin-bottom: 10px;
+        }
+
+        .course-item ul {
+            margin-left: 20px;
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .course-item ul li {
+            padding: 5px;
+        }
+
+        .friends {
+            margin: 30px 0;
+            font-size: 1.2em;
+            color: #e94560;
+        }
+
+        .friends a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .friends a:hover {
+            text-decoration: underline;
+            color: #e94560;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        footer:before {
+            content: "🎅";
+            margin-right: 10px;
+        }
+
+        footer:after {
+            content: "🎁";
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Paolo Gómez Manrique</h1>
+        <p>Ciencia de la Computación🎁.</p>
+    </header>
+
+    <div class="main-content">
+        <section class="about-me">
+            <h2>Presentación</h2>
+            <p>Mi nombre es Paolo Gómez Manrique. Soy estudiante de Ciencia de la Computación.</p>
+            <div class="info">
+                <div>
+                    <p><strong>Nombre:</strong> Paolo Gómez Manrique</p>
+                    <p><strong>Edad:</strong> 18</p>
+                    <p><strong>Correo:</strong> paolo.gomez@ucsp.edu.pe</p>
+                </div>
+                <div>
+                    <p><strong>Años Estudiando:</strong> 1 años</p>
+                    <p><strong>Ubicación:</strong> Arequipa, Perú</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses">
+            <h2>Cursos</h2>
+            <div class="course-item">
+                <h3>Semestre 1</h3>
+                <ul>
+                    <li>Comunicación</li>
+                    <li>Matemática 1</li>
+                    <li>Estructuras Discretas</li>
+                    <li>Programación de videojuegos</li>
+                    <li>Metodología del Estudio</li>
+                    <li>Introducción a la Vida Universitaria</li>
+                </ul>
+            </div>
+            <div class="course-item">
+                <h3>Semestre 2</h3>
+                <ul>
+                    <li>Matemática 2</li>
+                    <li>Estructuras Discretas 2</li>
+                    <li>Cálculo 1</li>
+                    <li>Introducción a la Filosofía</li>
+                    <li>Ciencia de la Computación</li>
+                    <li>Introducción a la Ciencia de la Computación</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="friends">
+        <p>ENLACE DE COMPAÑEROS: 
+            <a href="https://jose-alejandro-sabino-romero-salas.github.io/" target="_blank">Jose Alejandro Sabino Romero</a> | 
+            <a href="https://amigo2.com" target="_blank">Ivan Gonzales Begazo</a>
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Paolo Gómez Manrique. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
